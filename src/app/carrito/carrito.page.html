@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col><img src="../../assets/imagenes/carro.png" id="imagen" alt=""></ion-col>
+      <ion-col></ion-col>
+  </ion-row>
+  <ion-back-button defaultHref="/cliente/home"  slot="start"></ion-back-button>
+  <ion-buttons slot="end">
+      <ion-menu-button class="icon1" menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <h5 class="texto">MI CARRITO</h5>
+
+ <br>
+ 
+ <ion-row>
+ <ion-card style="width: 100px; height: 100px;">
+ </ion-card>
+ <ion-col center><ion-label style="color: dimgray;">Nombre:</ion-label>
+  <br><br>
+  <ion-label style="color: dimgray;">P/U: $</ion-label>
+  <input type="text" value="0" id="item" name="item" disabled  class="ico2"  style="width: 35px;">
+   <button class="ico3" (click)="incrementar()">+</button>
+   <button class="ico4" (click)="decrementar()">-</button>   
+   <ion-icon name="trash-outline" class="ico5"></ion-icon>
+  <br><br>
+  <ion-label style="color: dimgray;">Subtotal:</ion-label>
+</ion-col>
+</ion-row>
+
+
+
+<ion-row>
+  <ion-card style="width: 100px; height: 100px;">
+  </ion-card>
+  <ion-col center><ion-label style="color: dimgray;">Nombre:</ion-label> <br><br>
+   <ion-label style="color: dimgray;">P/U:$</ion-label>
+   <input type="text" value="0" id="hola" name="hola" disabled  class="ico2"  style="width: 35px;">
+    <button class="ico3" (click)="incrementar1()">+</button>
+    <button class="ico4" (click)="decrementar1()">-</button>
+  <ion-icon name="trash-outline" class="ico5"></ion-icon>
+   <br><br>
+   <ion-label style="color: dimgray;">Subtotal:</ion-label>
+ </ion-col>
+ </ion-row>
+
+
+ <ion-row>
+  <ion-card style="width: 100px; height: 100px;">
+  </ion-card>
+  <ion-col center><ion-label style="color: dimgray;">Nombre:</ion-label> <br><br>
+   <ion-label style="color: dimgray;">P/U:$</ion-label>
+   <input type="text" value="0" id="soso" name="soso" disabled  class="ico2"  style="width: 35px;">
+   <button class="ico3" (click)="incrementar2()">+</button>
+   <button class="ico4" (click)="decrementar2()">-</button>   
+   <ion-icon name="trash-outline" class="ico5"></ion-icon>
+   <br><br>
+   <ion-label style="color: dimgray;">Subtotal:</ion-label>
+ </ion-col>
+ </ion-row>
+ 
+
+  <ion-row class="ion-padding-start" id="dos">
+    <ion-label style="width: 400px; height: 40px;" class="uno"><h6 class="op">TOTAL: $$</h6></ion-label>
+  </ion-row>
+  
+
+  <ion-row>
+    <ion-col>
+      <br>
+      <ion-row class="ion-padding-start" id="pe">
+        <ion-input class="ep"><h6 class="op1">Dirección de envío</h6></ion-input>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <br>
+      <ion-row class="ion-padding-start" id="pe">
+        <ion-input class="ep"><h6 class="op2">Forma de pago</h6></ion-input>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col>
+      <ion-button  (click)="presentAlert()" color="light"><h6 class="op3">Enviar Pedido</h6></ion-button>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer class="tab"><br></ion-footer>
